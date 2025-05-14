@@ -119,7 +119,7 @@ Agents will:
 - 📈 **Agent Beta**: expand into SMART objectives  
 - 🗓️ **Agent Gamma**: build a 7-day timeline  
 
-Output will be shown in glowing green/black console-style boxes.
+
 
 ---
 
