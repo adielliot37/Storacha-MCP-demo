@@ -6,7 +6,7 @@ This project demonstrates a live multi-agent AI pipeline using the **MCP** with 
 
 ---
 
-## 📦 Tech Stack
+##  Tech Stack
 
 - **React** + Vite frontend
 - **OpenAI GPT-4** for agent intelligence
@@ -16,23 +16,23 @@ This project demonstrates a live multi-agent AI pipeline using the **MCP** with 
 
 ---
 
-## 🧠 Agent Roles & Flow
+##  Agent Roles & Flow
 
 This demo simulates 3 collaborating AI agents that operate in sequence:
 
 | Agent        | Task                                                                 |
 |--------------|----------------------------------------------------------------------|
-| 🧪 Agent Alpha   | Generates a go-to-market strategy for an AR glasses startup         |
-| 📈 Agent Beta    | Expands the strategy into detailed SMART objectives                 |
-| 🗓️ Agent Gamma    | Converts those objectives into a 7-day execution timeline          |
+|  Agent Alpha   | Generates a go-to-market strategy for an AR glasses startup         |
+|  Agent Beta    | Expands the strategy into detailed SMART objectives                 |
+|  Agent Gamma    | Converts those objectives into a 7-day execution timeline          |
 
 Data is passed between agents **via MCP** using content-addressed files (CIDs), simulating decentralized agent memory exchange.
 
 ---
 
-## 🧰 How MCP + Storacha Works
+##  How MCP + Storacha Works
 
-### 🔁 Flow:
+### Flow:
 
 1. **Agent Alpha** generates data using OpenAI and uploads it to the Storacha MCP REST server.
 2. MCP converts the file into a **Base64-encoded blob** and stores it via UCAN authorization into a **Storacha Space**.
@@ -40,7 +40,7 @@ Data is passed between agents **via MCP** using content-addressed files (CIDs), 
 4. **Agent Beta** retrieves the file from MCP using the CID.
 5. Data flows **trustlessly** without hardcoded file paths or centralized APIs.
 
-### 🧪 MCP Tool Calls Used:
+###  MCP Tool Calls Used:
 
 - `tools/call` → `"upload"`: stores file as Base64 + filename
 - `tools/call` → `"retrieve"`: fetches file via CID + filename
@@ -48,9 +48,9 @@ Data is passed between agents **via MCP** using content-addressed files (CIDs), 
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
-### 📁 Clone & Setup Project
+###  Clone & Setup Project
 
 ```bash
 # Clone the frontend
@@ -109,15 +109,15 @@ npm run dev
 ```
 
 
-## 🧪 Live Demo Flow
+##  Live Demo Flow
 
 Click **Run AI Pipeline**
 
 Agents will:
 
-- 🧪 **Agent Alpha**: generate product launch strategy  
-- 📈 **Agent Beta**: expand into SMART objectives  
-- 🗓️ **Agent Gamma**: build a 7-day timeline  
+-  **Agent Alpha**: generate product launch strategy  
+-  **Agent Beta**: expand into SMART objectives  
+-  **Agent Gamma**: build a 7-day timeline  
 
 
 
@@ -132,7 +132,7 @@ Agents will:
 
 ---
 
-## ✅ Example `tools/list` Response
+##  Example `tools/list` Response
 
 ```json
 {
